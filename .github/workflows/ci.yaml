@@ -1,0 +1,49 @@
+name: CI - Build & Push Docker Images
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        service:
+          - name: chatbot-service
+            context: ./backend/chatbot-service
+            image: chatbot-service
+          - name: auth-service
+            context: ./backend/auth-service
+            image: auth-service
+          - name: gateway
+            context: ./backend/gateway
+            image: gateway
+          - name: frontend
+            context: ./frontend/university-chat-ui
+            image: frontend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build (PR) or Build & Push (main)
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.service.context }}
+          push: ${{ github.event_name == 'push' }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.service.image }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.service.image }}:sha-${{ github.sha }}

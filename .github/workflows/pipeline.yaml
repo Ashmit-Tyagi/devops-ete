@@ -66,12 +66,13 @@ jobs:
           Write-Host "=== Services (university-chatbot) ==="
           kubectl -n university-chatbot get svc -o wide
 
-      - name: Print Frontend URL (non-blocking)
+      - name: Print Frontend URL (Windows Docker driver)
         shell: powershell
         run: |
-          $ip = (minikube ip).Trim()
           $nodePort = kubectl -n university-chatbot get svc frontend -o jsonpath="{.spec.ports[0].nodePort}"
           Write-Host "=== Frontend URL ==="
-          Write-Host ("http://{0}:{1}" -f $ip, $nodePort)
+          Write-Host ("http://127.0.0.1:{0}" -f $nodePort)
+        #   Write-Host "Note: If it doesn't open, run: minikube service -n university-chatbot frontend --url (locally)."
+
 
 

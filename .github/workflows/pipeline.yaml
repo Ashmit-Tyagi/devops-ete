@@ -57,8 +57,18 @@ jobs:
         run: |
           kubectl apply -f k8s/
 
-      - name: Verify
+      - name: Show running resources
         shell: powershell
         run: |
-          kubectl -n university-chatbot get pods
-          kubectl -n university-chatbot get svc
+          Write-Host "=== Pods (university-chatbot) ==="
+          kubectl -n university-chatbot get pods -o wide
+          Write-Host ""
+          Write-Host "=== Services (university-chatbot) ==="
+          kubectl -n university-chatbot get svc -o wide
+
+      - name: Print Frontend URL
+        shell: powershell
+        run: |
+          Write-Host "=== Frontend URL ==="
+          minikube service -n university-chatbot frontend --url
+

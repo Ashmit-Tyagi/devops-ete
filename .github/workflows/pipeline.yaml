@@ -66,9 +66,12 @@ jobs:
           Write-Host "=== Services (university-chatbot) ==="
           kubectl -n university-chatbot get svc -o wide
 
-      - name: Print Frontend URL
+      - name: Print Frontend URL (non-blocking)
         shell: powershell
         run: |
+          $ip = (minikube ip).Trim()
+          $nodePort = kubectl -n university-chatbot get svc frontend -o jsonpath="{.spec.ports[0].nodePort}"
           Write-Host "=== Frontend URL ==="
-          minikube service -n university-chatbot frontend --url
+          Write-Host ("http://{0}:{1}" -f $ip, $nodePort)
+
 

@@ -18,3 +18,7 @@ spec:
           image: ashmit7tyagi/auth-service:latest
           ports:
             - containerPort: 5003
+          env:
+           - name: MONGO_URI
+             value: "mongodb://mongo:27017/bennett-chatbot"
+

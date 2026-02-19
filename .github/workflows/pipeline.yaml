@@ -71,8 +71,7 @@ jobs:
         run: |
           $nodePort = kubectl -n university-chatbot get svc frontend -o jsonpath="{.spec.ports[0].nodePort}"
           Write-Host "=== Frontend URL ==="
-          Write-Host ("http://127.0.0.1:{0}" -f $nodePort)
-        #   Write-Host "Note: If it doesn't open, run: minikube service -n university-chatbot frontend --url (locally)."
+          Write-Host "Note: If it doesn't open, run: minikube service -n university-chatbot frontend --url (locally)."
 
 
 

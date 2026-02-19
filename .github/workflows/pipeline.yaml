@@ -66,12 +66,12 @@ jobs:
           Write-Host "=== Services (university-chatbot) ==="
           kubectl -n university-chatbot get svc -o wide
 
-      - name: Print Frontend URL (Windows Docker driver)
-        shell: powershell
-        run: |
-          $nodePort = kubectl -n university-chatbot get svc frontend -o jsonpath="{.spec.ports[0].nodePort}"
-          Write-Host "=== Frontend URL ==="
-          Write-Host "Note: If it doesn't open, run: minikube service -n university-chatbot frontend --url (locally)."
+      # - name: Print Frontend URL (Windows Docker driver)
+      #   shell: powershell
+      #   run: |
+      #     $nodePort = kubectl -n university-chatbot get svc frontend -o jsonpath="{.spec.ports[0].nodePort}"
+      #     Write-Host "=== Frontend URL ==="
+      #     Write-Host "Note: If it doesn't open, run: minikube service -n university-chatbot frontend --url (locally)."
 
 
 

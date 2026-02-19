@@ -29,19 +29,6 @@ The system is built using a **microservice architecture**, where each service ru
 
 ---
 
-## 🏗️ System Architecture
-
-| Service | Technology | Description |
-|------|-----------|-------------|
-| Frontend | React | User interface (Auth + Chat UI) |
-| API Gateway | Node.js (Express) | Central entry point for frontend |
-| Auth Service | Node.js + Express | Handles login, signup, JWT auth |
-| Chatbot Service | Python + Flask | Processes user messages |
-| Database | MongoDB Atlas | Stores user authentication data |
-| Containerization | Docker, Docker Compose | Service orchestration |
-
----
-
 ## 🧠 Chatbot Logic (NLP Approach)
 
 This chatbot uses a **rule-based, keyword-driven NLP approach** suitable for academic systems.
@@ -57,42 +44,3 @@ This chatbot uses a **rule-based, keyword-driven NLP approach** suitable for aca
 - Easy to explain during presentations  
 - Simple to extend and maintain  
 
----
-
-## 🛠️ Technologies Used
-
-**Frontend**
-- React
-- Axios
-- Custom CSS
-
-**Backend**
-- Node.js
-- Express.js
-- JWT Authentication
-- bcrypt
-
-**Chatbot**
-- Python
-- Flask
-- Rule-based NLP
-
-**Database**
-- MongoDB Atlas
-
-**DevOps**
-- Docker
-- Docker Compose
-
----
-
-## ▶️ How to Run the Project
-
-### Prerequisites
-- Docker & Docker Compose
-- MongoDB Atlas cluster
-
-### Steps
-```bash
-docker compose down
-docker compose up -d --build

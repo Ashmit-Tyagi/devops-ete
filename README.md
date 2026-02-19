@@ -44,8 +44,3 @@ This chatbot uses a **rule-based, keyword-driven NLP approach** suitable for aca
 - Easy to explain during presentations  
 - Simple to extend and maintain  
 
-
-### Steps
-```bash
-docker compose down
-docker compose up -d --build

@@ -1,7 +1,8 @@
 # University-Chatbot DevOps End to End 
 # Campus Virtual Assistant (University Chatbot)
 
-## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life. The system follows a microservice architecture, where each service runs independently inside Docker containers and communicates via APIs.
+## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life. 
+## The system follows a microservice architecture, where each service runs independently inside Docker containers and communicates via APIs.
 
 
 ## 📌 Project Overview

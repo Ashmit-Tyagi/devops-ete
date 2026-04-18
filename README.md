@@ -2,7 +2,7 @@
 
 ## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life. 
 
-### The base application for this project was forked from University-Chatbot by Shruti. The original repository provided the core chatbot implementation.
+### The base application for this project was forked from [University Chatbot](https://github.com/shrutisgithub/University-Chatbot). The original repository provided the core chatbot implementation.
 
 ### This project extends it by implementing a complete DevOps lifecycle, including:
 

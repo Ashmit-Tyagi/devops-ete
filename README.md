@@ -1,5 +1,4 @@
 # University-Chatbot DevOps End to End 
-# Campus Virtual Assistant (University Chatbot)
 
 ## The base application for this project was forked from University-Chatbot by Shruti. The original repository provided the core chatbot implementation.
 

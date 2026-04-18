@@ -3,7 +3,8 @@
 
 ## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life. The system follows a microservice architecture, where each service runs independently inside Docker containers and communicates via APIs.
 
-## Project Overview
+
+## 📌 Project Overview
 
 ### This project demonstrates an end-to-end DevOps implementation for deploying a microservices-based chatbot application.
 

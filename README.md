@@ -44,3 +44,67 @@
     React-based frontend
     Responsive design
     Clean chat interface
+
+### 🧠 Chatbot Logic (NLP Approach)
+
+### This chatbot uses a rule-based, keyword-driven NLP approach, ideal for structured academic queries.
+
+### 🔍 How it works:
+
+     Converts user input to lowercase
+     Matches predefined keywords (e.g., admission, fees, hostel)
+     Maps keywords to fixed responses
+     Returns consistent and accurate replies
+
+### ✅ Why this approach?
+     High accuracy for domain-specific queries
+     No unpredictable responses
+     Easy to explain in interviews and demos
+     Simple to extend and maintain
+
+### Tech Stack
+
+     Frontend: React
+     Backend: Node.js / Express (adjust if needed)
+     Database: MongoDB Atlas
+     Containerization: Docker
+     Orchestration (Local): Kubernetes (Minikube)
+     Infrastructure as Code: Terraform
+     Cloud Provider: AWS
+     Compute: EC2
+     Monitoring & Logging: Amazon CloudWatch
+     Version Control: Git & GitHub
+
+### Prerequisites
+
+     Terraform CLI
+     AWS CLI (aws configure)
+     Docker
+     Kubernetes (Minikube)
+     Git
+
+### Repository Structure
+
+<img width="408" height="913" alt="Screenshot 2026-04-18 183148" src="https://github.com/user-attachments/assets/6bc12ca1-a33f-4906-9d7b-82b19d68ec50" />
+
+###  Architecture Overview
+
+### 1. Local Deployment (Kubernetes)
+
+     Deployed using Kubernetes manifests
+     Used for microservices orchestration and testing
+     
+### 2. Cloud Deployment (AWS EC2)
+
+     Infrastructure provisioned using Terraform
+     Application deployed using Docker containers
+     Monitoring via CloudWatch
+
+### Monitoring & Logging
+
+### Implemented using Amazon CloudWatch.
+#### Includes:
+
+     EC2 CPU & network monitoring
+     Log collection
+     Instance health tracking

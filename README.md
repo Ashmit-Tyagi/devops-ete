@@ -101,12 +101,27 @@
 
      Deployed using Kubernetes manifests
      Used for microservices orchestration and testing
+
+     <img width="1919" height="1002" alt="Screenshot 2026-02-19 191844" src="https://github.com/user-attachments/assets/07e9edd9-79e9-43f9-beea-aefdaa4f63eb" />
+
+
+     <img width="1919" height="1044" alt="Screenshot 2026-02-19 183535" src="https://github.com/user-attachments/assets/6c975b71-ea50-4575-b323-0c05aa4c3222" />
+
      
 ### 2. Cloud Deployment (AWS EC2)
 
      Infrastructure provisioned using Terraform
      Application deployed using Docker containers
      Monitoring via CloudWatch
+
+     <img width="1919" height="1198" alt="Screenshot 2026-04-16 192449" src="https://github.com/user-attachments/assets/30731c9f-b8e2-4a34-a421-089006c89502" />
+
+     <img width="1919" height="1199" alt="Screenshot 2026-04-16 193513" src="https://github.com/user-attachments/assets/e1815e2a-34be-48f9-8b60-828279aaad93" />
+
+
+     <img width="1919" height="1199" alt="Screenshot 2026-04-16 193335" src="https://github.com/user-attachments/assets/e9ff47c4-0be2-43db-ac60-928e52e58414" />
+
+
 
 ### Monitoring & Logging
 

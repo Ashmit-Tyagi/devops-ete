@@ -11,8 +11,36 @@
 
 ### The workflow includes:
 
-    - Local deployment using Kubernetes
-    - Containerization using Docker
-    - Infrastructure provisioning using Terraform
-    - Deployment on AWS EC2
-    - Monitoring and logging using Amazon CloudWatch
+     Local deployment using Kubernetes
+     Containerization using Docker
+     Infrastructure provisioning using Terraform
+     Deployment on AWS EC2
+     Monitoring and logging using Amazon CloudWatch
+
+## 🚀 Features
+
+### 🔐 User Authentication
+
+    Sign Up & Sign In using email and password
+    JWT-based authentication
+    User data stored in MongoDB Atlas
+
+### 🤖 University Chatbot
+
+    Handles FAQs: admissions, fees, hostels, placements, scholarships
+    Rule-based NLP for accurate responses
+    No hallucinations (controlled output)
+    
+### 🧩 Microservice Architecture
+
+    Frontend service
+    Authentication service
+    Chatbot service
+    API Gateway
+    All services containerized using Docker
+    
+### 🎨 Modern UI
+
+    React-based frontend
+    Responsive design
+    Clean chat interface

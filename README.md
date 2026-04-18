@@ -1,9 +1,18 @@
 # University-Chatbot DevOps End to End 
 # Campus Virtual Assistant (University Chatbot)
 
+## The base application for this project was forked from University-Chatbot by Shruti. The original repository provided the core chatbot implementation.
+
+## This project extends it by implementing a complete DevOps lifecycle, including:
+
+     Docker-based containerization
+     Kubernetes deployment (local environment)
+     Infrastructure provisioning using Terraform
+     Deployment on AWS EC2
+     Monitoring and logging using Amazon CloudWatch
+
 ## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life. 
 ## The system follows a microservice architecture, where each service runs independently inside Docker containers and communicates via APIs.
-
 
 ## 📌 Project Overview
 
@@ -64,24 +73,24 @@
 
 ### Tech Stack
 
-     Frontend: React
-     Backend: Node.js / Express (adjust if needed)
-     Database: MongoDB Atlas
-     Containerization: Docker
-     Orchestration (Local): Kubernetes (Minikube)
-     Infrastructure as Code: Terraform
-     Cloud Provider: AWS
-     Compute: EC2
-     Monitoring & Logging: Amazon CloudWatch
-     Version Control: Git & GitHub
+     1. Frontend: React
+     2. Backend: Node.js / Express (adjust if needed)
+     3. Database: MongoDB Atlas
+     4. Containerization: Docker
+     5. Orchestration (Local): Kubernetes (Minikube)
+     6. Infrastructure as Code: Terraform
+     7. Cloud Provider: AWS
+     8. Compute: EC2
+     9. Monitoring & Logging: Amazon CloudWatch
+     10. Version Control: Git & GitHub
 
 ### Prerequisites
 
-     Terraform CLI
-     AWS CLI (aws configure)
-     Docker
-     Kubernetes (Minikube)
-     Git
+     1. Terraform CLI
+     2. AWS CLI (aws configure)
+     3. Docker
+     4. Kubernetes (Minikube)
+     5. Git
 
 ### Repository Structure
 
@@ -105,6 +114,18 @@
 ### Implemented using Amazon CloudWatch.
 #### Includes:
 
-     EC2 CPU & network monitoring
-     Log collection
-     Instance health tracking
+     1. EC2 CPU & network monitoring
+     2. Log collection
+     3. Instance health tracking
+
+
+### Key Learnings
+
+     1. Microservices architecture design
+     2. Docker-based containerization
+     3. Kubernetes local orchestration
+     4. Monitoring using CloudWatch
+
+### Conclusion
+
+#### This project demonstrates a complete DevOps lifecycle—from application development and microservices design to cloud deployment and monitoring—aligned with real-world industry practices.

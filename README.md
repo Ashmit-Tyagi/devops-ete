@@ -1,46 +1,17 @@
-# 🎓 Campus Virtual Assistant (University Chatbot)
+# University-Chatbot DevOps End to End 
+Campus Virtual Assistant (University Chatbot)
 
-A **Campus Virtual Assistant** designed to help students get instant answers to common university-related queries such as **admissions, fees, hostels, placements, scholarships, courses, and campus life**.
+## A Campus Virtual Assistant designed to help students get instant answers to common university-related queries such as admissions, fees, hostels, placements, scholarships, courses, and campus life.
+## The system follows a microservice architecture, where each service runs independently inside Docker containers and communicates via APIs.
 
-The system is built using a **microservice architecture**, where each service runs independently inside **Docker containers** and communicates via APIs.
+## Project Overview
 
----
+### This project demonstrates an end-to-end DevOps implementation for deploying a microservices-based chatbot application.
 
-## 🚀 Features
+### The workflow includes:
 
-### 🔐 User Authentication
-- Sign Up & Sign In using email and password  
-- JWT-based authentication  
-- User data stored in MongoDB Atlas  
-
-### 🤖 University Chatbot
-- Answers university-related FAQs (admissions, fees, hostels, placements, scholarships, etc.)
-- Rule-based NLP logic for **accurate and predictable responses**
-- No AI hallucinations
-
-### 🧩 Microservice Architecture
-- Independent services for frontend, authentication, API gateway, and chatbot logic
-- All services containerized using Docker
-
-### 🎨 Modern UI
-- React-based frontend
-- Dark-themed, responsive interface
-- Simple and intuitive chat experience
-
----
-
-## 🧠 Chatbot Logic (NLP Approach)
-
-This chatbot uses a **rule-based, keyword-driven NLP approach** suitable for academic systems.
-
-**How it works:**
-- Converts user input to lowercase
-- Matches predefined keywords (e.g., admission, fees, hostel, placement)
-- Maps keywords to fixed responses
-- Returns accurate and controlled replies
-
-**Why this approach?**
-- High accuracy for university FAQs  
-- Easy to explain during presentations  
-- Simple to extend and maintain  
-
+    - Local deployment using Kubernetes
+    - Containerization using Docker
+    - Infrastructure provisioning using Terraform
+    - Deployment on AWS EC2
+    - Monitoring and logging using Amazon CloudWatch
